@@ -1,0 +1,130 @@
+[0m[[0mdebug[0m] [0mForking tests - parallelism = false[0m
+[0m[[0mdebug[0m] [0mCreate a single-thread test executor[0m
+[0m[[0mdebug[0m] [0mRunner for org.specs2.runner.Specs2Framework produced 2 initial tasks for 2 tests.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(ApplicationSpec, sbt.ForkMain$SubclassFingerscan@45e62a7e, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0mApplicationSpec[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mApplication should[0m
+[0m[[0minfo[0m] [0m  [32m+[0m send 404 on a bad request[0m
+[0m[[0minfo[0m] [0m  [32m+[0m render the index page[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTotal for specification ApplicationSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 2 seconds, 637 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m2 examples, 0 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 2 events.[0m
+[0m[[0mdebug[0m] [0m  Running TaskDef(IntegrationSpec, sbt.ForkMain$SubclassFingerscan@537803be, false, [SuiteSelector])[0m
+[0m[[0minfo[0m] [0mIntegrationSpec[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mApplication should[0m
+[0m[[0minfo[0m] [0m  [32m+[0m work from within a browser[0m
+[0m[[0minfo[0m] [0m  [32m+[0m add a new user from the browser[0m
+[0m[[31merror[0m] [0m  [33mx[0m prevent an incorrect email from being added[0m
+[0m[[31merror[0m] [0m   '<?xml version="1.0" encoding="UTF-8"?>[0m
+[0m[[31merror[0m] [0m   <html lang="en">[0m
+[0m[[31merror[0m] [0m     <head>[0m
+[0m[[31merror[0m] [0m       <title>[0m
+[0m[[31merror[0m] [0m         Add User[0m
+[0m[[31merror[0m] [0m       </title>[0m
+[0m[[31merror[0m] [0m       <link rel="stylesheet" media="screen" href="/assets/stylesheets/main.css"/>[0m
+[0m[[31merror[0m] [0m       <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png"/>[0m
+[0m[[31merror[0m] [0m       <script src="/assets/javascripts/hello.js" type="text/javascript">[0m
+[0m[[31merror[0m] [0m       </script>[0m
+[0m[[31merror[0m] [0m       <script src="//code.jquery.com/jquery-1.11.3.min.js">[0m
+[0m[[31merror[0m] [0m       </script>[0m
+[0m[[31merror[0m] [0m       <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js">[0m
+[0m[[31merror[0m] [0m       </script>[0m
+[0m[[31merror[0m] [0m       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>[0m
+[0m[[31merror[0m] [0m       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>[0m
+[0m[[31merror[0m] [0m       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">[0m
+[0m[[31merror[0m] [0m       </script>[0m
+[0m[[31merror[0m] [0m     </head>[0m
+[0m[[31merror[0m] [0m     <body style="zoom: 1;">[0m
+[0m[[31merror[0m] [0m       <nav class="navbar navbar-default">[0m
+[0m[[31merror[0m] [0m         <div class="container-fluid">[0m
+[0m[[31merror[0m] [0m           <ul class="nav navbar-nav">[0m
+[0m[[31merror[0m] [0m             <li role=" presentation">[0m
+[0m[[31merror[0m] [0m               <a href="/add">[0m
+[0m[[31merror[0m] [0m                 Add User[0m
+[0m[[31merror[0m] [0m               </a>[0m
+[0m[[31merror[0m] [0m             </li>[0m
+[0m[[31merror[0m] [0m             <li role="presentation">[0m
+[0m[[31merror[0m] [0m               <a href="/api/list">[0m
+[0m[[31merror[0m] [0m                 View Users[0m
+[0m[[31merror[0m] [0m               </a>[0m
+[0m[[31merror[0m] [0m             </li>[0m
+[0m[[31merror[0m] [0m           </ul>[0m
+[0m[[31merror[0m] [0m           <form class="navbar-form navbar-left" role="search" method="get" action="/search">[0m
+[0m[[31merror[0m] [0m             <div class="form-group">[0m
+[0m[[31merror[0m] [0m               <input name="name" type="text" class="form-control" placeholder="Search for"/>[0m
+[0m[[31merror[0m] [0m             </div>[0m
+[0m[[31merror[0m] [0m             <div class="form-group">[0m
+[0m[[31merror[0m] [0m               <select name="field" class="form-control">[0m
+[0m[[31merror[0m] [0m                 <option value="name" selected="selected">[0m
+[0m[[31merror[0m] [0m                   Name[0m
+[0m[[31merror[0m] [0m                 </option>[0m
+[0m[[31merror[0m] [0m                 <option value="email">[0m
+[0m[[31merror[0m] [0m                   Email[0m
+[0m[[31merror[0m] [0m                 </option>[0m
+[0m[[31merror[0m] [0m               </select>[0m
+[0m[[31merror[0m] [0m             </div>[0m
+[0m[[31merror[0m] [0m             <button type="submit" class="btn btn-default">[0m
+[0m[[31merror[0m] [0m               Search[0m
+[0m[[31merror[0m] [0m             </button>[0m
+[0m[[31merror[0m] [0m           </form>[0m
+[0m[[31merror[0m] [0m         </div>[0m
+[0m[[31merror[0m] [0m       </nav>[0m
+[0m[[31merror[0m] [0m       <div class="alert alert-success" role="alert">[0m
+[0m[[31merror[0m] [0m         The user was successfully added![0m
+[0m[[31merror[0m] [0m       </div>[0m
+[0m[[31merror[0m] [0m       <form id="user_form" class="form-horizontal" name="user" method="post" action="/create">[0m
+[0m[[31merror[0m] [0m         <div class="form-group">[0m
+[0m[[31merror[0m] [0m           <div class="col-xs-6 col-md-4">[0m
+[0m[[31merror[0m] [0m             <label for="name">[0m
+[0m[[31merror[0m] [0m               Name:[0m
+[0m[[31merror[0m] [0m             </label>[0m
+[0m[[31merror[0m] [0m           </div>[0m
+[0m[[31merror[0m] [0m           <div class="col-xs-6 col-md-4">[0m
+[0m[[31merror[0m] [0m             <input id="name" class="form-control" name="name" type="text"/>[0m
+[0m[[31merror[0m] [0m           </div>[0m
+[0m[[31merror[0m] [0m         </div>[0m
+[0m[[31merror[0m] [0m         <div class="form-group">[0m
+[0m[[31merror[0m] [0m           <div class="col-xs-6 col-md-4">[0m
+[0m[[31merror[0m] [0m             <label for="email">[0m
+[0m[[31merror[0m] [0m               Email:[0m
+[0m[[31merror[0m] [0m             </label>[0m
+[0m[[31merror[0m] [0m           </div>[0m
+[0m[[31merror[0m] [0m           <div class="col-xs-6 col-md-4">[0m
+[0m[[31merror[0m] [0m             <input id="email" class="form-control" name="email" type="email"/>[0m
+[0m[[31merror[0m] [0m           </div>[0m
+[0m[[31merror[0m] [0m         </div>[0m
+[0m[[31merror[0m] [0m         <div class="form-group">[0m
+[0m[[31merror[0m] [0m           <div class="col-xs-6 col-md-4">[0m
+[0m[[31merror[0m] [0m             <button id="button" class="btn btn-default">[0m
+[0m[[31merror[0m] [0m               Add User[0m
+[0m[[31merror[0m] [0m             </button>[0m
+[0m[[31merror[0m] [0m           </div>[0m
+[0m[[31merror[0m] [0m         </div>[0m
+[0m[[31merror[0m] [0m       </form>[0m
+[0m[[31merror[0m] [0m     </body>[0m
+[0m[[31merror[0m] [0m   </html>[0m
+[0m[[31merror[0m] [0m   ' contains 'The user was successfully added!' (IntegrationSpec.scala:34)[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0m  [32m+[0m prevent an empty email from being added[0m
+[0m[[0minfo[0m] [0m  [32m+[0m prevent an empty name from being added[0m
+[0m[[0minfo[0m] [0m  [32m+[0m list all users[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0minfo[0m] [0mTotal for specification IntegrationSpec[0m
+[0m[[0minfo[0m] [0m[36mFinished in 5 seconds, 832 ms[0m[0m
+[0m[[0minfo[0m] [0m[36m[0m[36m6 examples, 1 failure, 0 error[0m[0m
+[0m[[0minfo[0m] [0m[0m
+[0m[[0mdebug[0m] [0m    Produced 0 nested tasks and 6 events.[0m
+[0m[[0mdebug[0m] [0mRunner for com.novocode.junit.JUnitFramework produced 0 initial tasks for 0 tests.[0m
+[0m[[0mdebug[0m] [0mSummary for specs2 not available.[0m
+[0m[[0mdebug[0m] [0mSummary for JUnit not available.[0m
+[0m[[31merror[0m] [0mFailed: Total 8, Failed 1, Errors 0, Passed 7[0m
+[0m[[0mdebug[0m] [0mPassed tests:[0m
+[0m[[0mdebug[0m] [0m	ApplicationSpec[0m
+[0m[[31merror[0m] [0mFailed tests:[0m
+[0m[[31merror[0m] [0m	IntegrationSpec[0m
+[0m[[31merror[0m] [0m(test:[31mtest[0m) sbt.TestsFailedException: Tests unsuccessful[0m

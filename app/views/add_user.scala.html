@@ -1,0 +1,14 @@
+@(user_form: Form[User],message_type: String = "")
+
+@main("Add User") {
+
+@if(message_type == "success") {
+<div class="alert alert-success" role="alert">The user was successfully added!</div>
+}
+@if(message_type == "failed") {
+<div class="alert alert-danger" role="alert">There was a problem and the user was not added.</div>
+}
+
+@views.html.form.render(user_form)
+
+}

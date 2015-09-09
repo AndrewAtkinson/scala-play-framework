@@ -1,0 +1,38 @@
+@(user_form: Form[User])
+
+<form id="user_form" class="form-horizontal" name="user" method="post" action="/create">
+    <div class='form-group@(if(user_form.error("name")) {" has-error"})'>
+        <div class="col-xs-6 col-md-4">
+            <label for="name">Name:</label>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <input id="name" class="form-control" name="name" type="text">
+            @if(user_form.error("name")) {
+            <span id="helpBlockName" class="help-block">
+                @for(error <- user_form.error("name")) {
+                    @error.message<br/>
+                }</span>
+            }
+        </div>
+    </div>
+    <div class='form-group@(if(user_form.error("email")) {" has-error"})'>
+        <div class="col-xs-6 col-md-4">
+            <label for="email">Email:</label>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <input id="email" class="form-control" name="email" type="email">
+            @if(user_form.error("email")) {
+            <span id="helpBlockEmail" class="help-block">
+                @for(error <- user_form.error("email")) {
+                    @error.message<br/>
+                }
+            </span>
+            }
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-xs-6 col-md-4">
+            <button id="button" class="btn btn-default">Add User</button>
+        </div>
+    </div>
+</form>

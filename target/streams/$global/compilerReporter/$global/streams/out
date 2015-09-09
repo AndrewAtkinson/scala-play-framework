@@ -1,0 +1,4 @@
+[0m[[33mwarn[0m] [0m/Users/andyatkinson/orange-bus-form/app/controllers/User_Controller.scala:88: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.[0m
+[0m[[33mwarn[0m] [0m      cursor[JsObject] // perform the query and get a cursor of JsObject[0m
+[0m[[33mwarn[0m] [0m      ^[0m
+[0m[[33mwarn[0m] [0mone warning found[0m
